@@ -43,7 +43,7 @@ before_action :find_pic, only: [:show, :edit, :update, :destroy]
 	private
 
 	def pic_params
-		params.require(:pic).permit(:title, :description)
+		params.require(:pic).permit(:title, :description, :image)
 	end 
 
 	def find_pic
